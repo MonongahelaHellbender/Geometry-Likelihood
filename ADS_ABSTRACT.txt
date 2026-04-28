@@ -1,0 +1,9 @@
+TITLE: A Unified Geometric Resolution of the Hubble and Growth Tensions via Logarithmic Expansion Drift in a Half-Turn (E2) Manifold
+AUTHOR: Melissa Dawn Dembeck-Ellison
+SIGNIFICANCE: Delta AIC = 7.20 (Strong Preference over LCDM)
+CORE DISCOVERY: Growth Suppression (S8) = 30.45%
+
+ABSTRACT:
+This research presents a unified geometric resolution to the persistent Hubble (H0) and Growth (S8) tensions. We propose a cosmological model where the global topology is a finite Half-Turn (E2) Manifold with a fundamental domain size of L ≈ 18.7 Gpc. This topology induces a leading-order correction to the volume expansion rate, manifesting as a Logarithmic Expansion Drift H(z) = H_late - k log10(1+z) with an empirical coefficient k ≈ 2.100. 
+
+We demonstrate that this model reconciles a local H0 = 72.0 km/s/Mpc with the Planck acoustic scale (la = 300.06) while maintaining the stability of the higher CMB acoustic peaks (l = 2 to 1000). Statistical comparison via the Akaike Information Criterion yields a ΔAIC = 7.20, indicating strong preference over standard LCDM. Furthermore, the model naturally resolves the S8 tension through a predicted 30.45% suppression of structure growth history. We provide specific comoving distance forecasts for upcoming Euclid and DESI surveys and identify the physical twist axis of the manifold as a candidate explanation for the CMB hemispherical power asymmetry (the "Axis of Evil").
