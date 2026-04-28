@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research or code, please cite it as below."
+authors:
+  - family-names: Ellison
+    given-names: Melissa
+title: "A Unified Geometric Resolution of the Hubble Tension via Logarithmic Expansion Drift"
+version: 1.0.0
+date-released: 2026-04-28
+url: "https://github.com/MonongahelaHellbender/Geometry-Likelihood"
