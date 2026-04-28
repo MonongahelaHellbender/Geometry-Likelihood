@@ -14,7 +14,7 @@ This repository contains the statistical proof and physical derivations for a Lo
 - `discovery_plot.png`: Visual proof of the expansion history drift.
 
 ## Affiliation
-**Author:** Melissa Ellison  
+**Author:** Melissa Dembeck-Ellison  
 **Location:** Winnsboro, Texas  
 **Status:** Independent Research (Phase 2 Complete)
 
