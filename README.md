@@ -29,3 +29,17 @@ Our model makes specific, falsifiable predictions for the Comoving Distance to t
 | 1.10 | 3426.24 |
 
 **Theoretical Signature:** Predicted Today (=0$) Equation of State  = -1.0124$. This represents a stable "Phantom Crossing" required by the Half-Turn geometry.
+
+## Citation
+If you use this model or code in your research, please cite it as:
+
+```bibtex
+@software{Ellison_Unified_Geometric_2026,
+  author = {Ellison, Melissa},
+  title = {A Unified Geometric Resolution of the Hubble Tension via Logarithmic Expansion Drift},
+  year = {2026},
+  url = {https://github.com/MonongahelaHellbender/Geometry-Likelihood},
+  version = {1.0.0},
+  note = {Phase 2 Verified: Statistical reconciliation of H0=72.0 and Planck la=300.06}
+}
+```
