@@ -17,3 +17,15 @@ This repository contains the statistical proof and physical derivations for a Lo
 **Author:** Melissa Ellison  
 **Location:** Winnsboro, Texas  
 **Status:** Independent Research (Phase 2 Complete)
+
+## Phase 4: Observational Forecasts (DESI/Euclid)
+Our model makes specific, falsifiable predictions for the Comoving Distance to the BAO scale. If survey data aligns with these values, the Logarithmic Expansion Drift is confirmed.
+
+| Redshift (z) | Comoving Distance (Mpc) |
+| :--- | :--- |
+| 0.15 | 602.46 |
+| 0.51 | 1863.08 |
+| 0.85 | 2830.32 |
+| 1.10 | 3426.24 |
+
+**Theoretical Signature:** Predicted Today (=0$) Equation of State  = -1.0124$. This represents a stable "Phantom Crossing" required by the Half-Turn geometry.
