@@ -1,25 +1,20 @@
-# A Candidate Geometric Framework for Cosmological Tensions: The E2 Manifold
+# Empirical Falsification of an E2 Manifold Cosmological Drift
 
 **Author:** Melissa Dawn Dembeck-Ellison
-**Status:** Theoretical Prototype / Proof-of-Concept
+**Status:** Concluded (Null Result)
 
 ## Overview
-This repository provides the *theoretical scaffolding and simplified prototype scripts* for a geometric modification to the standard cosmological model. We investigate whether modeling the global topology as a finite Half-Turn (E2) Manifold introduces a Logarithmic Expansion Drift. 
+This repository investigated whether modeling the global topology as a finite Half-Turn ($E_2$) Manifold introduced a Logarithmic Expansion Drift $H(z) = H_{late} - k \log_{10}(1+z)$ capable of reducing the $H_0$ and $S_8$ tensions. 
 
-**Current Status:** This is a candidate drift model that reduces selected H0/S8 discrepancies under *simplified validation tests*. It is not yet a fully reproducible likelihood pipeline.
+While preliminary prototype testing against heavily binned data suggested a statistically viable parameter space ($k \approx 2.1$), formal integration with the unbinned Pantheon+ covariance matrix conclusively falsified the model.
 
-## 1. Current Prototype Evidence
-The scripts provided currently use binned, representative, or mocked data to demonstrate the mathematical viability of the framework:
-* demo_pantheon_binned_fit.py: Demonstrates the shift using a highly binned subset of Pantheon+ data.
-* plot_bao_ratios.py: Plots the theoretical curve against published BOSS/eBOSS data points.
-* demo_corner_mock.py: Generates a mock MCMC posterior to demonstrate the expected parameter degeneracy between H0 and the drift coefficient k.
-* custom_theory.py: The structural shell for the eventual Cobaya/CAMB integration.
+## Final Results (Formal MCMC)
+A full Markov Chain Monte Carlo analysis using the `cobaya` framework against the complete Pantheon+ sample (1700+ SNIa) yielded the following constraints:
 
-## 2. Next Steps: Full Reproducibility Pipeline
-To transition from a mathematical prototype to a formal cosmological validation, the next phase of this project will build reproduce.py, which will include:
-1. Full integration of the unbinned Pantheon+ covariance matrix.
-2. A complete calculate() method in Cobaya to formally modify the CAMB background expansion.
-3. A real MCMC run generating true Bayesian evidence and posteriors.
+* **$k_{drift}$:** $< 0.190$ (Strongly preferring 0.0)
+* **$\chi^2_{SN}$:** $2061.7 \pm 1.6$
 
-## Citation
-Dembeck-Ellison, Melissa Dawn (2026). A Candidate Geometric Framework for Cosmological Tensions (Prototype).
+**Conclusion:** The unbinned observational data does not support a logarithmic expansion drift. When exposed to the full covariance matrix, the likelihood engine aggressively drives the drift coefficient to zero, effectively returning the expansion history to a standard $\Lambda$CDM geometry. The proposed topological framework is formally ruled out as a primary resolution to the $H_0$ tension.
+
+## Repository Value
+This codebase is preserved as an open-source demonstration of rapid hypothesis testing, symbolic integration, and formal Bayesian falsification pipelines.
