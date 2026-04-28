@@ -1,3 +1,9 @@
+"""
+WARNING: PROTOTYPE DEMO SCRIPT
+This script uses SIMULATED/BINNED representative data for demonstration.
+It does NOT use the full Pantheon+ covariance matrix.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 

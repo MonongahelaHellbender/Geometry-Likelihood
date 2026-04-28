@@ -1,3 +1,9 @@
+"""
+WARNING: PROTOTYPE DEMO SCRIPT
+This script generates MOCK random samples for visualization purposes.
+It is NOT the output of a converged, formal MCMC chain.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
