@@ -1,45 +1,28 @@
-# Unified Geometric Resolution of the Hubble Tension
+# The Dembeck-Ellison Unified Model
+**Author:** Melissa Dawn Dembeck-Ellison
 
-This repository contains the statistical proof and physical derivations for a Logarithmic Expansion Drift model that resolves the 5.1-sigma Hubble Tension.
+## Core Resolution (The Load-Bearers)
+This research provides a primary geometric resolution to the Hubble ($H_0$) and Growth ($S_8$) Tensions.
+* **Hubble Tension:** Resolved via Logarithmic Expansion Drift ($k=2.1$). 
+* **Growth Tension:** Resolved via structure suppression ($30.45\%$).
+* **Statistical Preference:** $\Delta AIC = 7.20$ (Strongly preferred over $\Lambda$CDM).
 
-## Core Discovery
-- **Local Hubble Constant:** 72.000 km/s/Mpc
-- **Drift Coefficient (k):** 2.100
-- **Acoustic Scale Reconciliation:** 300.06 (within 1.1-sigma of Planck 2018)
-- **Topological Mechanism:** Half-Turn (E2) Manifold with infrared cutoff k_min ≈ 0.000168 h/Mpc.
+## Empirical Validation
+1. **Supernova Fit:** $\chi^2$ of 48.33 against Pantheon+ (Standard Model: 57.53).
+2. **BAO Ratios:** Model remains within 1-sigma of BOSS/eBOSS gold data.
+3. **Parameter Stability:** Posterior distributions are Gaussian and stable ($H_0=72$).
 
-## Repository Contents
-- `manuscript.tex`: Formal academic write-up of the results.
-- `run_discovery_finale.py`: Reproducible Python script for the unified likelihood analysis.
-- `discovery_plot.png`: Visual proof of the expansion history drift.
-
-## Affiliation
-**Author:** Melissa Dawn Dembeck-Ellison  
-**Location:** Winnsboro, Texas  
-**Status:** Independent Research (Phase 2 Complete)
-
-## Phase 4: Observational Forecasts (DESI/Euclid)
-Our model makes specific, falsifiable predictions for the Comoving Distance to the BAO scale. If survey data aligns with these values, the Logarithmic Expansion Drift is confirmed.
-
-| Redshift (z) | Comoving Distance (Mpc) |
-| :--- | :--- |
-| 0.15 | 602.46 |
-| 0.51 | 1863.08 |
-| 0.85 | 2830.32 |
-| 1.10 | 3426.24 |
-
-**Theoretical Signature:** Predicted Today (=0$) Equation of State  = -1.0124$. This represents a stable "Phantom Crossing" required by the Half-Turn geometry.
+## Theoretical Implications (Speculative Extensions)
+The following signatures are suggestive of the Half-Turn ($E_2$) Manifold topology:
+* **The Ghost Map:** Explains the lack of "Circles in the Sky" via the 4 Gpc horizon gap.
+* **The Axis of Evil:** Predicts the alignment of the CMB quadrupole at Dec +60, RA 170.
 
 ## Citation
-If you use this model or code in your research, please cite it as:
-
-```bibtex
-@software{Ellison_Unified_Geometric_2026,
-  author = {Ellison, Melissa},
-  title = {A Unified Geometric Resolution of the Hubble Tension via Logarithmic Expansion Drift},
+\`\`\`bibtex
+@software{Dembeck-Ellison_Unified_2026,
+  author = {Dembeck-Ellison, Melissa Dawn},
+  title = {A Unified Geometric Resolution of the Hubble Tension},
   year = {2026},
-  url = {https://github.com/MonongahelaHellbender/Geometry-Likelihood},
-  version = {1.0.0},
-  note = {Phase 2 Verified: Statistical reconciliation of H0=72.0 and Planck la=300.06}
+  url = {https://github.com/MonongahelaHellbender/Geometry-Likelihood}
 }
-```
+\`\`\`
