@@ -1,52 +1,25 @@
 # A Candidate Geometric Framework for Cosmological Tensions: The E2 Manifold
 
 **Author:** Melissa Dawn Dembeck-Ellison
-**Status:** Preprint / Reproducibility Package
+**Status:** Theoretical Prototype / Proof-of-Concept
 
 ## Overview
-This repository provides the computational artifacts and statistical likelihood analysis for a geometric modification to the standard cosmological model. We investigate whether modeling the global topology as a finite Half-Turn ($E_2$) Manifold ($L \approx 18.7$ Gpc) introduces a Logarithmic Expansion Drift capable of reducing the $H_0$ and $S_8$ parameter tensions.
+This repository provides the *theoretical scaffolding and simplified prototype scripts* for a geometric modification to the standard cosmological model. We investigate whether modeling the global topology as a finite Half-Turn (E2) Manifold introduces a Logarithmic Expansion Drift. 
 
-## A. Statistical Benchmarking & Model Selection
-Our primary claim relies on an information-theoretic comparison against the standard model. Based on the combined likelihood analysis of local distance ladders and CMB priors:
+**Current Status:** This is a candidate drift model that reduces selected H0/S8 discrepancies under *simplified validation tests*. It is not yet a fully reproducible likelihood pipeline.
 
-| Metric | $\Lambda$CDM Baseline | Dembeck-Ellison ($E_2$) |
-| :--- | :--- | :--- |
-| **$H_0$** | $67.4 \pm 0.5$ | $72.0 \pm 0.5$ |
-| **$\chi^2$ (SN)** | 57.53 | 48.33 |
-| **$\Delta \chi^2$** | -- | -9.20 |
-| **AIC** | 61.53 | 54.33 |
-| **$\Delta AIC$** | -- | **-7.20 (Strong Preference)** |
+## 1. Current Prototype Evidence
+The scripts provided currently use binned, representative, or mocked data to demonstrate the mathematical viability of the framework:
+* demo_pantheon_binned_fit.py: Demonstrates the shift using a highly binned subset of Pantheon+ data.
+* plot_bao_ratios.py: Plots the theoretical curve against published BOSS/eBOSS data points.
+* demo_corner_mock.py: Generates a mock MCMC posterior to demonstrate the expected parameter degeneracy between H0 and the drift coefficient k.
+* custom_theory.py: The structural shell for the eventual Cobaya/CAMB integration.
 
-*Note: Posterior distributions (68% and 95% credible intervals) for $H_0$ and the drift coefficient $k$ are available in `parameter_confidence.png`.*
-
-## B. Reproducibility & Data Provenance
-This framework was tested against the following observational datasets:
-1. **Supernovae:** Pantheon+ (Brout et al. 2022) for distance modulus ($\mu$) fitting.
-2. **BAO:** BOSS DR12 and eBOSS DR16 consensus constraints (Alam et al. 2021) for $D_M/r_s$ ratios.
-3. **CMB:** Planck 2018 baseline (Aghanim et al. 2020) for the acoustic scale ($\ell_a \approx 300.06$) and higher acoustic peak stability.
-
-**Execution Workflow:**
-To reproduce the statistical findings, set up the environment and execute the scripts in the following order:
-`pip install -r requirements.txt`
-`python3 test_pantheon_fit.py`       # Generates baseline Chi-Square comparison
-`python3 test_model_selection.py`    # Calculates AIC/BIC model preference
-`python3 plot_bao_ratios.py`         # Validates against large-scale structure
-`python3 check_cmb_stability.py`     # Verifies Planck peak phase stability
-
-## C. Posteriors & Uncertainty
-The drift model relies on a tightly constrained parameter island. MCMC corner plots (`plot_corner_mock.py`) demonstrate healthy degeneracy between the local expansion rate and the topological drift coefficient ($k = 2.10 \pm 0.15$), ensuring the resolution is statistically robust rather than a fine-tuned point fit.
-
-## D. Limitations and Future Work
-While this model reduces local tensions, we explicitly note the following limitations:
-* **Simplified Boundary Matching:** The current Lagrangian derivation relies on a leading-order approximation of the $E_2$ boundary condition. 
-* **Polarization Data:** Full-sky polarization maps (EE/TE spectra) require further simulation through a modified Boltzmann solver to confirm absolute phase stability across all multipoles.
-* **Interpretation:** This framework is presented as a *candidate* explanation. Further data from DESI DR1 and Euclid are required to rule out systematic errors in standard $\Lambda$CDM.
+## 2. Next Steps: Full Reproducibility Pipeline
+To transition from a mathematical prototype to a formal cosmological validation, the next phase of this project will build reproduce.py, which will include:
+1. Full integration of the unbinned Pantheon+ covariance matrix.
+2. A complete calculate() method in Cobaya to formally modify the CAMB background expansion.
+3. A real MCMC run generating true Bayesian evidence and posteriors.
 
 ## Citation
-```bibtex
-@software{Dembeck-Ellison_Geometric_2026,
-  author = {Dembeck-Ellison, Melissa Dawn},
-  title = {A Candidate Geometric Framework for Cosmological Tensions},
-  year = {2026},
-  url = {[https://github.com/MonongahelaHellbender/Geometry-Likelihood](https://github.com/MonongahelaHellbender/Geometry-Likelihood)}
-}
+Dembeck-Ellison, Melissa Dawn (2026). A Candidate Geometric Framework for Cosmological Tensions (Prototype).
