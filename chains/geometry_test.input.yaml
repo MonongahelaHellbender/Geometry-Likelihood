@@ -1,0 +1,22 @@
+theory:
+  custom_theory.LogDriftProvider: null
+  cobaya.theories.camb.camb:
+    external: true
+likelihood:
+  planck_2018_lowl.TT: null
+params:
+  ombh2: 0.02237
+  omch2: 0.12
+  tau: 0.0544
+  As: 2.1e-09
+  ns: 0.9649
+  H0_late: 71.43
+  k_drift: 1.297
+sampler:
+  mcmc:
+    max_tries: 200
+pythonpath:
+- .
+stop_at_error: true
+output: geometry_test
+test: true

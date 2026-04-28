@@ -1,0 +1,29 @@
+pythonpath: ["."]
+stop_at_error: True
+
+theory:
+  # Load your logic
+  custom_theory.LogDriftProvider:
+  # Use absolute path to bypass naming conflict in Python 3.14
+  cobaya.theories.camb.camb:
+    external: True
+
+params:
+  # Standard Fixed Planck 2018 Values
+  ombh2: 0.02237
+  omch2: 0.1200
+  tau: 0.0544
+  As: 2.1e-9
+  ns: 0.9649
+  # Your Model Parameters
+  H0_late: 71.43
+  k_drift: 1.297
+
+likelihood:
+  planck_2018_lowl.TT:
+
+sampler:
+  mcmc:
+    max_tries: 200
+
+output: chains/geometry_test
