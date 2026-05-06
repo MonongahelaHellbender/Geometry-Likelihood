@@ -1,4 +1,7 @@
-# Phase 2 Discovery Report: Geometric Resolution of the Hubble Tension
+# Historical Phase 2 Report: Pre-Falsification Prototype
+
+> Current status: historical only. This report records an earlier binned-data prototype and should not be used as the current project conclusion. The current source of truth is the null-result/falsification framing in `README.md` and `outputs/null_result_center/geometry_likelihood_null_center_packet_v1.md`.
+
 **Date:** April 27, 2026
 **Framework:** Logarithmic Expansion Drift + Half-Turn Topology
 
@@ -18,4 +21,6 @@
 - **Physical Result:** Suppression of the Quadrupole (=2$) confirmed by wavelength cutoff.
 
 ## 4. Conclusion
-The "Acoustic Scale Gap" is closed. By introducing a geometric drift of =2.1$, the 5-sigma Hubble Tension is reduced to a statistically insignificant 1-sigma reconciliation.
+Historical prototype conclusion at the time: the report claimed the "Acoustic Scale Gap" was closed by introducing a geometric drift near `k=2.1`.
+
+Current interpretation: this conclusion was later superseded by the unbinned Pantheon+ falsification chain and should not be repeated as the current project claim.

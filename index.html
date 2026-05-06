@@ -1,50 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The Dembeck-Ellison Unified Model</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geometry-Likelihood Null Result</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 40px; }
-        h1 { border-bottom: 2px solid #8e44ad; padding-bottom: 10px; color: #2c3e50; }
-        h2 { color: #8e44ad; margin-top: 40px; }
-        .stat-box { background: #f8f9fa; border-left: 5px solid #8e44ad; padding: 20px; margin: 20px 0; font-family: monospace; font-size: 1.1em; }
-        .grid { display: flex; gap: 20px; flex-wrap: wrap; }
-        .card { flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background: white; }
-        img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; }
-        .tag { background: #27ae60; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.8em; vertical-align: middle; }
+        :root {
+            color-scheme: light;
+            --ink: #24313f;
+            --muted: #5d6b78;
+            --line: #d7dde4;
+            --panel: #f7f9fb;
+            --accent: #2d6a6a;
+            --warning: #9b5c1e;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: #ffffff;
+        }
+
+        main {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 44px 22px 56px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 6vw, 3.25rem);
+            line-height: 1.08;
+            letter-spacing: 0;
+        }
+
+        h2 {
+            margin-top: 36px;
+            color: var(--accent);
+        }
+
+        .dek {
+            max-width: 780px;
+            font-size: 1.18rem;
+            color: var(--muted);
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 4px 9px;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .stat-box {
+            margin: 26px 0;
+            padding: 20px;
+            border-left: 5px solid var(--accent);
+            background: var(--panel);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            overflow-wrap: anywhere;
+        }
+
+        .notice {
+            border-left-color: var(--warning);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 16px;
+            background: white;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: var(--accent);
+            font-weight: 650;
+        }
     </style>
 </head>
 <body>
-    <h1>The Dembeck-Ellison Unified Model <span class="tag">Journal Ready</span></h1>
+<main>
+    <span class="tag">Formal null result</span>
+    <h1>Geometry-Likelihood</h1>
     <p><strong>Author:</strong> Melissa Dawn Dembeck-Ellison</p>
-    
-    <p>This research provides a unified geometric resolution to the Hubble ($H_0$) and Growth ($S_8$) tensions. By modeling the universe as a finite <strong>Half-Turn ($E_2$) Manifold</strong>, we demonstrate that the standard model is statistically outperformed by a geometric expansion drift ($\Delta AIC = 7.20$).</p>
+
+    <p class="dek">
+        This repository now preserves a falsification result. An early binned-data prototype suggested that a finite Half-Turn
+        (E2) manifold with logarithmic expansion drift might reduce cosmological tensions, but the formal unbinned Pantheon+
+        covariance analysis did not support the original high-drift claim.
+    </p>
 
     <div class="stat-box">
-        H0 Resolution: 72.000 km/s/Mpc (Confirmed)<br>
-        CMB Peak Stability: 1-1000 l-range (Verified)<br>
-        Growth Suppression: 30.45% (S8 Tension Resolved)<br>
-        Model Preference: Delta AIC 7.20 (Strong Evidence)
+        Current center: e2_drift_null_result<br>
+        k_drift mean: approximately 0.158 +/- 0.138<br>
+        k_drift 97.5th percentile: approximately 0.522<br>
+        Prototype k: approximately 2.1<br>
+        Conclusion: original high-drift tension-resolution claim is not supported
     </div>
 
-    <h2>Professional Evidence Portfolio</h2>
+    <h2>What This Project Shows</h2>
     <div class="grid">
         <div class="card">
-            <h3>1. CMB Peak Stability</h3>
-            <img src="cmb_peak_stability.png" alt="CMB Peaks">
-            <p>Verification via Boltzmann solver (CAMB) confirms that high-H0 drift preserves the phase and height of the first three acoustic peaks.</p>
+            <h3>Hypothesis Tested</h3>
+            <p>
+                The project tested whether a proposed E2 manifold drift term could survive formal likelihood analysis against
+                unbinned supernova data.
+            </p>
         </div>
         <div class="card">
-            <h3>2. BAO Standard Ruler</h3>
-            <img src="bao_validation.png" alt="BAO Plot">
-            <p>Full consistency with BOSS/eBOSS distance ratios $D_M/r_s$ across $0.1 < z < 2.5$.</p>
+            <h3>Result</h3>
+            <p>
+                The posterior collapsed toward low drift. The original k approximately 2.1 prototype should be treated as
+                historical, not as the current scientific conclusion.
+            </p>
         </div>
         <div class="card">
-            <h3>3. Statistical Integrity</h3>
-            <img src="parameter_confidence.png" alt="Posterior">
-            <p>Stable parameter island for H0 and k, proving the discovery is robust against internal degeneracies.</p>
+            <h3>Value</h3>
+            <p>
+                The useful artifact is the falsification workflow: rapid hypothesis formation, formal Bayesian testing, and
+                preservation of a null result instead of over-promoting an early signal.
+            </p>
         </div>
     </div>
 
-    <p><a href="https://github.com/MonongahelaHellbender/Geometry-Likelihood">View Full Proofs & Lagrangian Derivation on GitHub</a></p>
+    <h2>Current Source Of Truth</h2>
+    <div class="stat-box notice">
+        Start with README.md and outputs/null_result_center/geometry_likelihood_null_center_packet_v1.md.
+        Older positive-looking reports are retained for provenance only.
+    </div>
+
+    <p>
+        <a href="https://github.com/MonongahelaHellbender/Geometry-Likelihood">View the repository on GitHub</a>
+    </p>
+</main>
 </body>
 </html>
